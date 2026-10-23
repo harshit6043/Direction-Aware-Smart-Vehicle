@@ -66,15 +66,7 @@ Hardware note: Confirm the exact modules, voltage levels, current requirements, 
 - Connectivity: ESP32 Wi-Fi, HTTP, and secure-client libraries
 - AI service: Google Gemini API
 - Development environment: Arduino IDE or a compatible ESP32 toolchain
-📁 Repository Structure
-Direction-Aware-Smart-Vehicle/
-├── docs/
-│   └── direction aware.png   # Hardware wiring / system diagram
-├── src/
-│   └── main.ino              # ESP32 firmware
-├── smart vehicle.png         # Project image
-└── README.md                 # Project documentation
-⚙️ Getting Started
+
 Prerequisites
 - ESP32 development board and USB data cable
 - Arduino IDE with ESP32 board support installed
@@ -97,15 +89,7 @@ Create a local secrets.h file beside main.ino and add your own settings:
 #define GEMINI_API_KEY "YOUR_GEMINI_API_KEY"
 #define GEMINI_MODEL "YOUR_SUPPORTED_GEMINI_MODEL"
 #define TTS_WAV_URL_BASE ""
-Replace the example values with your own credentials and a Gemini model available to your API project. Never commit real Wi-Fi passwords or API keys to a public repository. Keep secrets.h local and add it to .gitignore.
-Clone, Build, and Upload
-git clone https://github.com/harshit6043/Direction-Aware-Smart-Vehicle.git
-cd Direction-Aware-Smart-Vehicle
-1. Open src/main.ino in the Arduino IDE.
-2. Select the appropriate ESP32 board and connected serial port.
-3. Install the required libraries and create secrets.h.
-4. Compile and upload the sketch to the board.
-5. Open Serial Monitor at 115200 baud to view diagnostic output.
+
 🔌 Pin Configuration
 Signal	GPIO / Value
 OLED SDA	GPIO 21
